@@ -1,0 +1,5 @@
+Oct 21, first I'm just checking out using the gradient, heavily inspired from the FGSM type stuff.
+https://christophm.github.io/interpretable-ml-book/pixel-attribution.html
+This is the " Vanilla Gradient (Saliency Maps)" method.
+"Vanilla Gradient has a saturation problem, as explained in Avanti et al. (2017) 82. When ReLU is used, and when the activation goes below zero, then the activation is capped at zero and does not change any more. The activation is saturated. For example: The input to the layer is two neurons with weights − 1 and − 1 and a bias of 1 . When passing through the ReLU layer, the activation will be neuron1 + neuron2 if the sum of both neurons is < 1 If the sum of both is greater than 1, the activation will remain saturated at an activation of 1 Also the gradient at this point will be zero, and Vanilla Gradient will say that this neuron is not important."
+
